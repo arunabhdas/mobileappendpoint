@@ -6,9 +6,23 @@
 */
 
 module.exports = {
-
   attributes: {
-
+    username: {
+    type: 'string',
+    required: true,
+    unique: true
+    },
+    title: {
+    type: 'string'
+    },
+    email: {
+    type: 'string',
+    email: true,
+    required: true,
+    unique: true
+    },
+    encryptedPassword: {
+    type: 'string'
+    }
   }
 };
-
