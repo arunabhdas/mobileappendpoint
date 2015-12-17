@@ -18,3 +18,6 @@ sails new mobileappendpoint
 
 * Generate api as follows
 sails generate api user
+
+* Add heroku as remote 
+heroku git:remote -a mobileappendpoint
