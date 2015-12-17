@@ -111,9 +111,9 @@ module.exports = function(grunt) {
 				appRoot: '.tmp/public'
 			},
 			files: {
-				'.tmp/public/index.html': ['.tmp/public/min/production.min.css'],
-				'views/**/*.html': ['.tmp/public/min/production.min.css'],
-				'views/**/*.ejs': ['.tmp/public/min/production.min.css']
+				'.tmp/public/index.html': ['.tmp/public/concat/production.css'],
+				'views/**/*.html': ['.tmp/public/concat/production.css'],
+				'views/**/*.ejs': ['.tmp/public/concat/production.css']
 			}
 		},
 
