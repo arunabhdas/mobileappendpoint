@@ -1,6 +1,9 @@
 <form action="/user/create" method="POST" id="sign-up-form" class="form-signin">
 	<h2 class="form-signin-heading">Create an account</h2>
-
+  <% if(flash && flash.err) { %>
+<% Object.keys(flash.err).forEach(function(error) { %>
+<%- JSON.stringify(flash.err[error]) %>
+<% }) %> <% } %>
 	<div class="control-group">
 	<input type="text" class="form-control" placeholder="your name" name="username">
 	</div>
