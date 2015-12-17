@@ -11,9 +11,10 @@ module.exports = {
 	},
 	create: function(req, res, next) {
 		User.create(req.params.all(), function userCreated(err, user) {
-			if (err) return next(err);
-			// Redirect to the show action
-			res.json(user);
+			if (err) {
+				console.log(err);
+				return res.redirect('/user/new');
+			}
 		})
 	}
 };
